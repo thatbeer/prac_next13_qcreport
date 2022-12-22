@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* laoading com by use event onload >> window.onload = () => {loader = doc.queryselect('.loader') then add loader.classist.add("hidden" */
+@layer components {
+    .loader {
+        @apply bg-blue-300 w-full h-screen fixed top-0 left-0 ease-in-out transform transition-transform duration-1000;
+
+        &.is-hidden {
+            @apply -translate-y-full
+
+            .loader_panel {
+                @apply -translate-y-full delay-200
+            }
+        }
+
+        &_panel {
+            @apply bg-black w-full h-full fixed top-0 left-0 ease-in-out transform transition-transform duration-1000
+            flex justify-center;
+        }
+    }
+}
