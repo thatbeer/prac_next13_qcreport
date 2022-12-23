@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon , ArrowUpCircleIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, BellIcon, XMarkIcon , ArrowUpCircleIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
 
 
 const navigation = [
@@ -46,7 +46,7 @@ const GlobalHeader = () =>  {
                     alt="Logo"
                   /> */}
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
+                {/* <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation?.map((item) => (
                       <a
@@ -62,20 +62,23 @@ const GlobalHeader = () =>  {
                       </a>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
 
 
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 
                 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                {/* Notification button for later add ons */}
-                {/* <button
+                {/* Notification button for later add ons */} 
+                <button
                   type="button"
                   className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button> */}
+                  <div className='flex flex-row'>
+                    <CurrencyDollarIcon className="h-6 w-6 text-yellow-400" aria-hidden="true" /> 1000
+
+                  </div>
+                </button>
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
@@ -101,6 +104,16 @@ const GlobalHeader = () =>  {
                   >
                     <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right 
                     rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="#"
+                            className={classNames(active ? 'bg-blue-100 shadow-md' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                          >
+                            Name here
+                          </a>
+                        )}
+                      </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
                           <a

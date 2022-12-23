@@ -21,4 +21,8 @@
             flex justify-center;
         }
     }
+
+    .bgcolor-blue {
+        @apply bg-gradient-to-b from-cyan-100 to-sky-400 h-full w-full;
+    }
 }

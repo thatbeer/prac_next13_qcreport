@@ -3,15 +3,13 @@ import Dropdownlist from './Dropdownlist';
 const Maincard = (props) => {
     return (
         <>
-            <div className="block p-4 my-2 border border-gray-300 rounded-lg w-4/5 lg:w-[800px] h-[160px] md:h-auto
+            <div className="block px-4 py-1 my-1 border  rounded-lg w-[660px] mx-auto  h-[160px] md:h-auto
                             shadow-none hover:shadow-sm bg-zinc-100 hover:bg-gray-200">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-800 dark:text-whte truncate ">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum
                     </h5>
                     <p className="text-gray-700 dark:text-gray-400 truncate overflow-auto my-2">
-                        Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”
-
-                        As Cicero would put it, “Um, not so fast.”
+                        
 
                     </p>
                     

@@ -6,6 +6,9 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    backgroundImage: {
+      'wbbg': "url('https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?w=2000')",
+    },
     extend: {
       animation: {
         wiggle: 'wiggle 2.5s ease-in-out infinite'
@@ -20,5 +23,9 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/forms"),
+    require("daisyui"),
   ],
+  daisyui: {
+    themes: false,
+  }
 }

@@ -5,16 +5,28 @@ import Authen from './Authen';
 import GlobalHeader from './GlobalHeader';
 import Mainpage from './Mainpage';
 import Skemaincard from '../components/ske-maincard'
+import Secondpage from './Secondpage'
+// const pic_url ="https://www.bsinterplas.com/wp-content/uploads/2016/05/bg.jpg"
+// // style={{backgroundColor: `url(${pic_url})`
+
+
 
 function HomePage() {
 
 
   return (
     <>
-      <GlobalHeader/>
-      {/* <Authen /> */}
-      {/* <Mainpage/> */}
-      <Skemaincard />
+      <main className=''>
+        <div className='sticky top-0 z-40 w-full'>
+        <GlobalHeader/>
+
+        </div>
+        {/* <Authen /> */}
+        {/* <Mainpage/> */}
+        {/* <Skemaincard /> */}
+        <hr/>
+        <Secondpage/>
+      </main>
     </>
   )
 }
