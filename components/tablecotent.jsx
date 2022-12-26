@@ -15,7 +15,7 @@ function TableContent(products) {
   
     return (
     <>
-        <div className=' mx-auto p-4 border border-gray-600 rounded-lg text-center' > 
+        <div className=' mx-auto p-4 border border-gray-600 rounded-lg text-center overflow-x-auto'   > 
 
             <table class="table-auto w-full divide-y divide-gray-700 min-h-[240px]">
                 <thead>
@@ -47,6 +47,36 @@ function TableContent(products) {
                         <td>date</td>
                     </tr>
 
+                    <tr className='my-4 h-[80px]' >
+                        <td>id</td>
+                        <td className='overflow-x-auto'><StepBarUse/></td>
+                        <td>date</td>
+                    </tr>
+                    <tr className='my-4 h-[80px]' >
+                        <td>id</td>
+                        <td className='overflow-x-auto'><StepBarUse/></td>
+                        <td>date</td>
+                    </tr>
+                    <tr className='my-4 h-[80px]' >
+                        <td>id</td>
+                        <td className='overflow-x-auto'><StepBarUse/></td>
+                        <td>date</td>
+                    </tr>
+                    <tr className='my-4 h-[80px]' >
+                        <td>id</td>
+                        <td className='overflow-x-auto'><StepBarUse/></td>
+                        <td>date</td>
+                    </tr>
+                    <tr className='my-4 h-[80px]' >
+                        <td>id</td>
+                        <td className='overflow-x-auto'><StepBarUse/></td>
+                        <td>date</td>
+                    </tr>
+                    <tr className='my-4 h-[80px]' >
+                        <td>id</td>
+                        <td className='overflow-x-auto'><StepBarUse/></td>
+                        <td>date</td>
+                    </tr>
                     <tr className='my-4 h-[80px]' >
                         <td>id</td>
                         <td className='overflow-x-auto'><StepBarUse/></td>

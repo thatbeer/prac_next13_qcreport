@@ -7,13 +7,13 @@ function Progressbar(props) {
         flex flex-col items-center'>
             <div className='w-full my-2 h-[120px] bg-gray-100 rounded-lg border border-offset-3 border-gray-600'>
 
-                <div className='title my-2 rounded flex flex-start justify-start justify-center '>
+                <div className='title my-2 rounded flex flex-start justify-center '>
                     <h1 className='font-bold text-xl text-blue-900'>ProgressBar</h1>
                 </div>
-                <div className=" bg-gray-200 h-5 rounded-2xl my-2 flex 
-                flex-inline justify-center items-center mx-auto" style={{width: "95%"}} >
-                    <div className="bg-red-400 h-5  flex flex-start items-center justify-center 
-                        text-xs font-semibold text-white rounded-2xl" 
+                <div className=" bg-gray-200 h-6 rounded-2xl my-2 flex 
+                flex-inline justify-start items-center mx-auto" style={{width: "95%"}} >
+                    <div className="bg-red-400 h-6  flex flex-start items-center justify-center 
+                        text-md font-semibold text-white rounded-2xl" 
                         style={{width: "75%"}}
                     >
                         75%
@@ -27,7 +27,23 @@ function Progressbar(props) {
                     </div>
                     
                 </div>
-                <span className='flex flex-inline justify-center items-center mx-auto'>เหลือ 0/100</span>
+                {/* detail of piles number */}
+                <div className='flex w-full divide-x-2 divide-gray-700'>
+                    <div className='flex flex-between w-full divide-x divide-gray-500'>
+                        <span className='flex flex-col w-full items-center 
+                        justify-start mx-auto my-2'>
+                            เหลือ 0/100
+                        </span>
+                        <span className='flex flex-col w-full
+                         items-center justify-start mx-auto my-2'>
+                            เหลือ 0/100
+                        </span>
+                        <span className='flex flex-col w-full
+                         items-center justify-start mx-auto my-2'>
+                            เหลือ 0/100
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </>

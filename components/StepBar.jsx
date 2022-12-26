@@ -40,7 +40,7 @@ export const StepBarUse = (props) => {
                 <li data-content="" className="step step-success text-red ">
                     <p>
                         8
-                    </p><ExclamationCircleIcon className="text-red-700 h-5 w-5 z-40 -mt-[90px]"/></li>
+                    </p><ExclamationCircleIcon className="text-red-700 h-5 w-5 z-10 -mt-[90px]"/></li>
                 <li  className="step "><p>9</p></li>
                 <li  className="step "><p>10</p></li>
                 <li data-content="✕" className="step step-error"><p>11</p></li>

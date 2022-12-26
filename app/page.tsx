@@ -17,15 +17,17 @@ function HomePage() {
   return (
     <>
       <main className=''>
-        <div className='sticky top-0 z-40 w-full'>
+        <div className='fixed  top-0 z-40 w-full'>
         <GlobalHeader/>
+        </div>
+        <div className='pt-[64px]'>
+          {/* <Authen /> */}
+          {/* <Mainpage/> */}
+          {/* <Skemaincard /> */}
+          <hr/>
+          <Secondpage/>
 
         </div>
-        {/* <Authen /> */}
-        {/* <Mainpage/> */}
-        {/* <Skemaincard /> */}
-        <hr/>
-        <Secondpage/>
       </main>
     </>
   )

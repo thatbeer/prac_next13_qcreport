@@ -1,9 +1,13 @@
 import Stickytitle from '../components/stickytitle';
 import Progressbar from '../components/progressbar'
 import TableContent from "../components/tablecotent";
-import FilterGroup from '../components/filtergroup';
+import Filtergroup from '../components/filtergroup';
 import { StepBarTitle , StepBarUse} from '../components/StepBar';
 import Statcard from '../components/Statcard'
+import FiltergroupMB from '../components/filtergroup(mb)'
+import Listbox from '../components/Listbox';
+
+
 
 const Secondpage = () => {
     const products = [
@@ -23,27 +27,59 @@ const Secondpage = () => {
     return (
         <>
             <div className="w-full flex flex-col
-             md:flex-row flex-grow overflow-auto h-screen mb-[100px] pb-[100px]">
+             lg:flex-row flex-grow h-screen ">
 
-
-                <div className="hidden md:flex w-1/4 flex-shrink flex-grow-0 p-4 bg-sky-200">
-                    <div className="sticky top-0 p-4 w-full mx-auto border border-dashed border-black">
-                        <ul className="flex flex-col overflow-hidden content-center justify-between">
-                            <li className='bg-red-200'>sdsdsd</li>
-                            <FilterGroup />
+                {/* Search Container as SIDE BAR */}
+                <div className="hidden lg:flex fixed w-1/4 flex-shrink 
+                flex-grow-0 p-4 bg-sky-200 h-full z-20">
+                    <div className=" top-0 p-1 w-full mx-auto border border-dashed border-black">
+                        <ul className="flex flex-col content-center justify-between">
+                            {/* <li className='bg-red-200'>sdsdsd</li> */}
+                            <li>
+                                <Filtergroup />
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <div className='flex mx-auto items-center justify-center'>
-                    <main role="main" className="w-full h-full flex-grow p-3">
-                        <div className='flex flex-col md:flex-row justify-between'>
-                            {/* <div className="w-full md:w-2/5">
+                {/* Search Container as TOP BAR (for mobile) */}
+
+
+                <div className='flex lg:hidden flex-col flex-shrink 
+                    flex-grow-0 w-screen mx-auto'
+                >
+                    <div className=' bg--700'>
+                        <div className='items-center justify-center px-4'>
+                            <FiltergroupMB loc='mobile'/>
+                            {/* <div>
+                                <Listbox />
+                            </div> */}
+                            <div className='mx-auto'>
+                                <ul className='w-full flex items-center justify-center'>
+                                    <li className="flex ">
+                                        <button className='btn btn-primary mx-2'>First</button>
+                                        <button className='btn btn-primary mx-2'>First</button>
+                                        <button className='btn btn-primary mx-2'>First</button>
+                                        <button className='btn btn-primary mx-2'>First</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div className='flex mx-auto lg:pl-[20rem]
+                 items-center justify-center'>
+                    <main role="main" className="lg:w-full w-screen h-full flex-grow p-3">
+                        <div className='flex flex-col lg:flex-row justify-between'>
+                            {/* <div className="w-full lg:w-2/5">
                             <Statcard/>
 
                             </div> */}
                             <div className='w-full '>
-                            <Progressbar/>
+                                <Progressbar/>
 
                             </div>
                         </div>
