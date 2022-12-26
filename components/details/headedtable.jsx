@@ -145,7 +145,6 @@ import React , { useState , useMemo } from 'react'
 //     }
 // ];
 
-
 const HeadedTable = ({header,datas}) => {
     // const columns = React.useMemo(
     //     () => [

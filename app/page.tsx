@@ -16,6 +16,7 @@ import DetailPage from './DetailPage';
 
 
 
+
 function HomePage() {
 
 
@@ -23,7 +24,7 @@ function HomePage() {
     <>
       <main className=''>
         <div className='fixed  top-0 z-40 w-full'>
-        <GlobalHeader/>
+          <GlobalHeader/>
         </div>
         <div className='pt-[64px]'>
           {/* <Authen /> */}

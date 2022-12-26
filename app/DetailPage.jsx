@@ -2,7 +2,7 @@ import React from 'react'
 import Step1 from '../components/details/step1'
 import Statcard from '../components/Statcard';
 import HeadedTable from '../components/details/headedtable'
-
+import HeadlessTable from '../components/details/headlesstable'
 
 
 const header = [
@@ -72,7 +72,8 @@ const DetailPage = () => {
         <div className='mx-auto px-4 my-4 flex flex-col w-full md:w-2/3'>
           {/* <Statcard/> */}
           {/* <Step1/> */}
-          <HeadedTable datas={fakeData} header={header}/>
+          {/* <HeadedTable datas={fakeData} header={header}/> */}
+          <HeadlessTable />
         </div>
     </>
   )
