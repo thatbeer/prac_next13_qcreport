@@ -4,6 +4,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './app/**/*.{js,ts,jsx,tsx}',
+    "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
   ],
   theme: {
     backgroundImage: {
@@ -23,10 +24,9 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/forms"),
-    require("daisyui"),
-    
+    require("daisyui")
   ],
   daisyui: {
-    themes: false,
+    themes: [],
   }
 }

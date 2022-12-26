@@ -6,6 +6,11 @@ import GlobalHeader from './GlobalHeader';
 import Mainpage from './Mainpage';
 import Skemaincard from '../components/ske-maincard'
 import Secondpage from './Secondpage'
+import Adminspage from './Adminspage';
+import DetailPage from './DetailPage';
+
+
+
 // const pic_url ="https://www.bsinterplas.com/wp-content/uploads/2016/05/bg.jpg"
 // // style={{backgroundColor: `url(${pic_url})`
 
@@ -25,7 +30,9 @@ function HomePage() {
           {/* <Mainpage/> */}
           {/* <Skemaincard /> */}
           <hr/>
-          <Secondpage/>
+          {/* <Secondpage/> */}
+          {/* <Adminspage /> */}
+          <DetailPage />
 
         </div>
       </main>

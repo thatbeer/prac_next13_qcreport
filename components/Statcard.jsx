@@ -4,9 +4,9 @@ function Statcard() {
   return (
     <>
 
-        <div className='container mx-auto p-1 pt-1 pb-4 w-full
+        <div className='mx-auto container w-full
             flex flex-col items-center'>
-            <div className='flex flex-col h-[120px] w-full my-2 bg-gray-100 rounded-lg border
+            <div className='flex flex-col h-auto w-full my-2 bg-gray-100 rounded-lg border
              border-offset-3 border-gray-600 divide-y divide-gray-500 '>
                 <h1 className='flex items-center justify-center h-2/5'>Bore pile</h1>
                 <div className='flex flex-row h-full divide-x divide-gray-500'>
