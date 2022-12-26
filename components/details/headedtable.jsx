@@ -156,7 +156,7 @@ const HeadedTable = ({header,datas}) => {
 
   return (
     <>
-        <div className='overflow-x-auto relative border border-gray-800 rounded-lg my-2'>  
+        <div className='overflow-x-auto relative border border-gray-600 rounded-lg my-2'>  
             <table className="table w-full">
                 <thead className='bg-gray-100 border-b border-gray-800'>
                     <tr>
@@ -170,14 +170,14 @@ const HeadedTable = ({header,datas}) => {
                         <th className='p-5 text-sm tracking-wide text-left'>Total</th> */}
                     </tr>
                 </thead>
-                <tbody className='bh-red-100 '>
+                <tbody className=' '>
                     { datas?.map((data,idx) => (
                         <tr key={idx} className="text-center">
-                            <td className='p-5 text-sm text-gray-700'>{data.NO}</td>
-                            <td className='p-5 text-sm text-gray-700'>{data.Detail}</td>
-                            <td className='p-5 text-sm text-gray-700'>{data.Status}</td>
-                            <td className='p-5 text-sm text-gray-700'>{data.DATE}</td>
-                            <td className='p-5 text-sm text-gray-700'>{data.TOTAL}</td>
+                            <td className='p-5 text-sm text-gray-700 border-r bg-red-200'>{data.NO}</td>
+                            <td className='p-5 text-sm text-gray-700 border-r bg-red-200'>{data.Detail}</td>
+                            <td className='p-5 text-sm text-gray-700 border-r bg-red-200'>{data.Status}</td>
+                            <td className='p-5 text-sm text-gray-700 border-r bg-red-200 '>{data.DATE}</td>
+                            <td className='p-5 text-sm text-gray-700 '>{data.TOTAL}</td>
                         </tr>
                     ))}
         
