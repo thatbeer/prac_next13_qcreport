@@ -10,7 +10,8 @@ import Adminspage from './Adminspage';
 import DetailPage from './DetailPage';
 import PsNote from '../components/utils/PsNote';
 import PsContainer from '../components/details/pscontainer'
-
+import Carousel from '../components/Carousel'
+import DyCarousel from '../components/Dy-carousel';
 // const pic_url ="https://www.bsinterplas.com/wp-content/uploads/2016/05/bg.jpg"
 // // style={{backgroundColor: `url(${pic_url})`
 
@@ -43,13 +44,17 @@ function HomePage() {
         <div className='pt-[64px]'>
           {/* <Authen /> */}
           {/* <Mainpage/> */}
-          {/* <Skemaincard /> */}
-          <hr/>
           {/* <Secondpage/> */}
           {/* <Adminspage /> */}
-          <DetailPage />
-          {/* <PsNote /> */}
-          {/* <PsContainer datas={datas}/> */}
+          {/* <DetailPage /> */}
+          {/* <div className='mx-auto px-2 my-4 flex flex-col w-full md:w-2/3'>
+            <div className='
+             border border-gray-700  '>
+              <Carousel />
+
+            </div>
+
+          </div> */}
         </div>
       </main>
     </>
