@@ -8,12 +8,26 @@ import Skemaincard from '../components/ske-maincard'
 import Secondpage from './Secondpage'
 import Adminspage from './Adminspage';
 import DetailPage from './DetailPage';
-
-
+import PsNote from '../components/utils/PsNote';
+import PsContainer from '../components/details/pscontainer'
 
 // const pic_url ="https://www.bsinterplas.com/wp-content/uploads/2016/05/bg.jpg"
 // // style={{backgroundColor: `url(${pic_url})`
 
+const datas = [
+  {
+      "id": 1,
+      "title": "ข้อมูลจะขึ้นแถบสีแดงเมื่อ:",
+      "tags" : [
+          {
+              "note" : "ไม่ได้ทำการติ๊กตรวจสอบโครงเหล็กหรือตรวจสอบโครงเหล็กไม่ครบทุกโครง"
+          },
+          {
+              "note" : "ไม่ได้ใส่รูปภาพโครงเหล็ก / ลูกปูน หรือใส่รูปภาพโครงเหล็ก / ลูกปูนไม่ครบทุกโครง"
+          }
+      ]
+  }
+];
 
 
 
@@ -34,7 +48,8 @@ function HomePage() {
           {/* <Secondpage/> */}
           {/* <Adminspage /> */}
           <DetailPage />
-
+          {/* <PsNote /> */}
+          {/* <PsContainer datas={datas}/> */}
         </div>
       </main>
     </>

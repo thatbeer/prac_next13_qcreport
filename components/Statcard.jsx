@@ -8,7 +8,7 @@ function Statcard() {
             flex flex-col items-center'>
             <div className='flex flex-col h-auto w-full my-2 bg-gray-100 rounded-lg border
              border-offset-3 border-gray-600 divide-y divide-gray-500 '>
-                <h1 className='flex items-center justify-center h-2/5'>Bore pile</h1>
+                <h1 className='flex items-center justify-center h-2/5 p-4 text-3xl font-bold'>Bore pile</h1>
                 <div className='flex flex-row h-full divide-x divide-gray-500'>
                     <div className='flex flex-col w-full items-center justify-start mx-auto my-2'>
                         <h1>Diameter</h1>

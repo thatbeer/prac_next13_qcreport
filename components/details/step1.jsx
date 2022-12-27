@@ -3,7 +3,53 @@ import Statcard from '../Statcard';
 import PsContainer from './pscontainer'
 import CheckTab from './checktab'
 import text from '../../text'
+import HeadedTable from './headedtable';
 
+import { CheckIcon } from '@heroicons/react/24/outline'
+import {MinusIcon} from '@heroicons/react/24/outline'
+
+
+const header = [
+        {
+            Header: "No."
+        },
+        {
+            Header: "Detail"
+        },
+        {
+            Header: "Status"
+        },
+        {
+            Header: "Date"
+        },
+        {
+            Header: "Total"
+        }
+]
+
+const fakeData = [
+    {
+        NO : '1',
+        Detail:'Red',
+        Status : "Quality Control",
+        DATE : "12/02/22",
+        TOTAL : 4
+    },
+    {
+        NO : '2',
+        Detail:'Red',
+        Status : "Quality Control",
+        DATE : "12/02/22",
+        TOTAL : 4
+    },
+    {
+        NO : '3',
+        Detail:'Green',
+        Status : "Quality Control",
+        DATE : "12/02/22",
+        TOTAL : 4
+    }
+]
 
 
 const Step1 = () => {
@@ -11,92 +57,100 @@ const Step1 = () => {
     return (
     <>
         <div className='flex flex-col'>
-            {/* first container */}
+           
            
         
             <h1 className='text-3xl font-bold'>1. เตรียมโครงเหล็ก</h1>
             
-            {/* second contianer */}
-
-            <div className='overflow-x-auto relative border border-gray-800 rounded-lg my-2'>  
-            <h1 className='w-full overflow-x-auto tracking-wide text-center border-b border-gray-600 p-2 bg-gray-100 font-bold'>Header</h1>
-            <table className="table w-full">
-                {/* <thead className='bg-gray-100 border-b border-gray-800 w-full text-center justify-center'>
-                    <div>sadsa</div>
-                </thead> */}
-                <tbody className='border-none rounded-none '>
-        
-                    <tr>
-                        <td className='p-5 text-sm text-gray-700 w-1/4 bg-emerald-200 border-r'>1</td>
-                        <td className='p-5 text-sm text-gray-700 w-3/4'>Cy Ganderton</td>
-                    </tr>
+       
             
-                    <tr>
-                        <td className='p-5 text-sm text-gray-700 bg-emerald-200 border-r'>1</td>
-                        <td className='p-5 text-sm text-gray-700'>Cy Ganderton</td>
-                    </tr>
-                
-                    <tr>
-                        <td className='p-5 text-sm text-gray-700 bg-emerald-200 border-r'>1</td>
-                        <td className='p-5 text-sm text-gray-700'>Cy Ganderton</td>
-                    </tr>
-                    <tr>
-                        <td className='p-5 text-sm text-gray-700 bg-emerald-200 border-r border-gray-700'>1</td>
-                        <td className='p-5 text-sm text-gray-700 '>Cy Ganderton</td>
-                    </tr>
+            <div className='mx-auto w-full relative my-2'>
+            <div className=' block bg-green-200'>
+            <div className='py-2 border border-gray-600 rounded-t  flex items-center
+            justify-center font-bold text-xl bg-blue-200'>
+                <h1>ข้อมูลการเตรียมโครงเหล็ก</h1>
+            </div>
+            <table className='w-full'>
+                <tbody className=' '>
+                <tr className=' flex border border-x border-gray-600 items-center text-start justify-between '>
+                    <th className='p-2 w-1/3 border-r border-gray-600'>วันที่เริ่ม</th>
+                    <td className='p-2 w-2/3 text-start bg-white'>25 ธ.ค. 2565 (14:01)</td>
+                </tr>
+                <tr className='flex border-b border-x border-gray-600  items-center text-start justify-between '>
+                    <th className='p-2 w-1/3 border-r border-gray-600'>วันที่เสร็จ</th>
+                    <td className='p-2 w-2/3 text-start bg-white'>25 ธ.ค. 2565 (14:05)</td>
+                </tr>
+                <tr className='flex border-b border-x border-gray-600  items-center text-start justify-between '>
+                    <th className='p-2 w-1/3 border-r border-gray-600'>เคสซิ่ง ∅ (ม.)</th>
+                    <td className='p-2 w-2/3 text-start bg-white'>1.20</td>
+                </tr>
+                <tr className='flex border-b border-x border-gray-600  items-center text-start justify-between '>
+                    <th className='p-2 w-1/3 border-r border-gray-600'>ความยาว (ม.)</th>
+                    <td className='p-2 w-2/3 text-start bg-white'>15.000</td>
+                </tr>
                 </tbody>
             </table>
             </div>
-            
+            </div>
             
 
-            {/* Table */}
-            <div className='overflow-x-auto relative border border-gray-800 rounded-lg my-2'>  
-            <table className="table w-full">
-                
-                <thead className='bg-gray-100 border-b border-gray-800'>
+          
+
+            <div className='overflow-x-auto my-2 '>  
+            <table className=" w-full">
+                <thead className='bg-blue-200 rounded'>
                     <tr>
-                        <th className='p-5 text-sm tracking-wide text-left border-r'>No.</th>
-                        <th className='p-5 text-sm tracking-wide text-left border-r'>Detail</th>
-                        <th className='p-5 text-sm tracking-wide text-left border-r'>Status</th>
-                        <th className='p-5 text-sm tracking-wide text-left border-r'>Date</th>
-                        <th className='p-5 text-sm tracking-wide text-left'>Total</th>
+                        <th className='p-5 text-sm w-1/7 text-center border border-gray-700 '>โครง</th>
+                        <th className='p-5 text-sm w-1/7 text-center border border-gray-700 '>ตามแบบ</th>
+                        <th className='p-5 text-sm w-1/7 text-center border border-gray-700 '>ลูกปูน</th>
+                        <th className='p-5 text-sm w-2/3 text-center border border-gray-700 '><pre className='border-b border-dashed border-gray-600'>MainBar</pre>Spiral</th>
+                        
                     </tr>
                 </thead>
-                <tbody className='bh-red-100 '>
+                <tbody className=' '>
+                   
+                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>1</td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-6 h-6 mx-auto"/></td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-6 h-6 mx-auto "/></td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '><pre className='border-b border-dashed border-gray-600'>หลัก: 12-DB20 SD40 x 8.9500 m.</pre>ช่วงที่ 1: RB9 SR24 x 7.500 m. @0.200</td>
+                        </tr>
+                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>2</td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-6 h-6 mx-auto"/></td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-6 h-6 mx-auto "/></td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '><pre className='border-b border-dashed border-gray-600'>หลัก: 12-DB20 SD40 x 8.9500 m.</pre>ช่วงที่ 1: RB9 SR24 x 7.500 m. @0.200</td>
+                        </tr>
+                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>3</td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-6 h-6 mx-auto"/></td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-6 h-6 mx-auto "/></td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '><pre className='border-b border-dashed border-gray-600'>หลัก: 12-DB20 SD40 x 8.9500 m.</pre>ช่วงที่ 1: RB9 SR24 x 7.500 m. @0.200</td>
+                        </tr>
+                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>4</td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-6 h-6 mx-auto"/></td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-6 h-6 mx-auto "/></td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '><pre className='border-b border-dashed border-gray-600'>หลัก: 12-DB20 SD40 x 8.9500 m.</pre>ช่วงที่ 1: RB9 SR24 x 7.500 m. @0.200</td>
+                        </tr>
+               
         
-                    <tr>
-                        <td className='p-5 text-sm text-gray-700 border-r'>1</td>
-                        <td className='p-5 text-sm text-gray-700 border-r'>Cy Ganderton</td>
-                        <td className='p-5 text-sm text-gray-700 border-r'>Quality Control Specialist</td >
-                        <td className='p-5 text-sm text-gray-700 border-r'>Blue</td>
-                        <td className='p-5 text-sm text-gray-700'>Blue</td>
-                    </tr>
-            
-                    <tr>
-                        <td className='p-5 text-sm text-gray-700 border-r'>1</td>
-                        <td className='p-5 text-sm text-gray-700 border-r'>Cy Ganderton</td>
-                        <td className='p-5 text-sm text-gray-700 border-r'>Quality Control Specialist</td >
-                        <td className='p-5 text-sm text-gray-700 border-r'>Blue</td>
-                        <td className='p-5 text-sm text-gray-700 '>Blue</td>
-                    </tr>
-                
-                    <tr>
-                        <td className='p-5 text-sm text-gray-700 border-r  border-gray-700'>1</td>
-                        <td className='p-5 text-sm text-gray-700 border-r  border-gray-700'>Cy Ganderton</td>
-                        <td className='p-5 text-sm text-gray-700 border-r  border-gray-700'>Quality Control Specialist</td >
-                        <td className='p-5 text-sm text-gray-700 border-r  border-gray-700'>Blue</td>
-                        <td className='p-5 text-sm text-gray-700 border-r '>Blue</td>
-                    </tr>
+
                 </tbody>
             </table>
-            </div>
+        </div>
             
             {/* ps tab */}
-            <PsContainer title="hello" text="lolen lara bora igna o no" />
+            <div className='relative mt-2'>
+                <div className='mx-1'>
+                    <h1 className='text-sm font-bold '>ข้อมูลจะขึ้นแถบสีแดงเมื่อ:</h1>
+                    <li className='text-sm'>ไม่ได้ทำการติ๊กตรวจสอบโครงเหล็กหรือตรวจสอบโครงเหล็กไม่ครบทุกโครง</li>
+                    <li className='text-sm'>ไม่ได้ใส่รูปภาพโครงเหล็ก / ลูกปูน หรือใส่รูปภาพโครงเหล็ก / ลูกปูนไม่ครบทุกโครง</li>
+                </div>
+            </div>
             
             {/* green/red tab */}
-            <CheckTab note={"xxxx"} />
+            <CheckTab note={"จะขึ้นแถบสีแดงเมื่อมีการป้อนข้อมูลในหมายเหตุ"} />
         </div>
     </>
   )
