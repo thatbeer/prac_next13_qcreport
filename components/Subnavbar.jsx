@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { FolderArrowDownIcon ,Bars3Icon} from '@heroicons/react/24/outline'
 import MyDropdown from '../components/utils/MyDropdown';
@@ -24,7 +26,7 @@ const Subnavbar = () => {
                   {/* <MyDrawer /> */}
                   <>
                   <div className="dropdown dropdown-bottom ">
-                    <label tabIndex={0} className="hover:cursor-pointer focus:border rounded-full"><Bars3Icon className="h-10 w-10 text-blue-700"/></label>
+                    <label tabIndex={0} className="hover:cursor-pointer focus:border rounded-full"><Bars3Icon className="h-10 w-10 text-red-700 z-40"/></label>
                     <ul tabIndex={0} className="dropdown-content menu divider-y
                         p-2 bg-blue-100 w-52 border border-gray-600">
                       <li className='border-b border-gray-700'><a>Item 1</a></li>

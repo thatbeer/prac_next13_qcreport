@@ -1,3 +1,6 @@
+'use client'
+
+
 import { useState , useEffect } from "react";
 import { RadioGroup } from "@headlessui/react";
 import { MagnifyingGlassCircleIcon } from "@heroicons/react/24/outline";

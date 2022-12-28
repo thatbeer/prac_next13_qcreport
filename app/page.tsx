@@ -1,7 +1,6 @@
 'use client'
 import '../styles/globals.css'
 import React  from 'react'
-import Authen from './Authen';
 import GlobalHeader from './GlobalHeader';
 import Mainpage from './Mainpage';
 import Secondpage from './Secondpage'
@@ -33,19 +32,18 @@ const datas = [
 
 function HomePage() {
 
-  console.log(window.screen.width)
   return (
     <>
-      <main className=''>
-        <div className='fixed  top-0 z-40 w-full'>
+      <main className='overflow-auto pt-[64px]'>
+        {/* <div className='fixed  top-0 z-40 w-full'>
           <GlobalHeader/>
-        </div>
-        <div className='pt-[64px] '>
+        </div> */}
+        {/* <div className='pt-[64px] '> */}
           {/* <Authen /> */}
           {/* <Mainpage/> */}
           {/* <Secondpage/> */}
           {/* <Adminspage /> */}
-          <DetailPage />
+          {/* <DetailPage /> */}
           {/* <div className='mx-auto px-2 my-4 flex flex-col w-full md:w-2/3'>
             <div className='
              border border-gray-700  '>
@@ -54,7 +52,10 @@ function HomePage() {
             </div>
 
           </div> */}
-        </div>
+          
+        {/* </div> */}
+        {/* <DetailPage /> */}
+        <Mainpage/>
       </main>
     </>
   )

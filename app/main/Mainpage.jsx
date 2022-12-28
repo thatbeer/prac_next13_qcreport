@@ -1,5 +1,3 @@
-"use client"
-
 import Maincard from '../components/Maincard';
 import Stickytitle from '../components/stickytitle';
 import RigProfile from '../components/Rigprofile';

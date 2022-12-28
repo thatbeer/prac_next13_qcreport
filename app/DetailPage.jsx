@@ -1,3 +1,6 @@
+'use client'
+
+
 import React , { useMemo } from 'react'
 import Step1 from '../components/details/step1'
 import Step2 from '../components/details/step2'
