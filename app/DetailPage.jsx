@@ -112,10 +112,7 @@ const DetailPage = () => {
         ],
         []
     )
-    const s_h = window.screen.height
-
-    console.log(s_h)
-    console.log(window.screen.width)
+   
   return (
     <>
         <div className='fixed w-screen z-30 '>

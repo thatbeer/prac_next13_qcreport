@@ -6,5 +6,9 @@ export default function DetailLayout({
   }: {
     children: React.ReactNode,
   }) {
-    return <section>{children}</section>;
+    return (
+      <section>
+        {children}
+      </section>
+    );
 }
