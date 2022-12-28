@@ -111,7 +111,7 @@ const DetailPage = () => {
     )
   return (
     <>
-        <div className='fixed w-screen z-40 '>
+        <div className='fixed w-screen z-30 '>
             <Subnavbar />
         </div>
         <div className='mx-auto px-2 lg:my-0 my-2 flex flex-col w-full md:w-2/3 '>
