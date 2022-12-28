@@ -33,7 +33,7 @@ const datas = [
 
 function HomePage() {
 
-
+  console.log(window.screen.width)
   return (
     <>
       <main className=''>
