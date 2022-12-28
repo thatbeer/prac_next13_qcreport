@@ -114,11 +114,11 @@ const DetailPage = () => {
     )
   return (
     <>
-        <div className='fixed w-screen z-40'>
+        <div className='fixed w-screen z-40 '>
             <Subnavbar />
         </div>
-        <div className='mx-auto px-2 my-4 flex flex-col w-full md:w-2/3 '>
-        <div className='pt-[60px]'>
+        <div className='mx-auto px-2 lg:my-0 my-2 flex flex-col w-full md:w-2/3 '>
+        <div className='pt-[60px] '>
 
         <Statcard/>
         <Step1/>
@@ -141,7 +141,7 @@ const DetailPage = () => {
         <hr className='my-8 '/>
         <Step10/>
         <hr className='my-8 '/>
-        <Step11/>
+        <Step11/> 
         </div>
 
 

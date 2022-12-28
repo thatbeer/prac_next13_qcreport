@@ -71,11 +71,11 @@ const GlobalHeader = () =>  {
                 {/* Notification button for later add ons */} 
                 <button
                   type="button"
-                  className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  className="lg:flex hidden rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <span className="sr-only">View notifications</span>
                   <div className='flex flex-row'>
-                    <CurrencyDollarIcon className="h-6 w-6 text-yellow-400" aria-hidden="true" /> 1000
+                    <CurrencyDollarIcon className="h-6 w-6 text-yellow-400 " aria-hidden="true" /> 1000
 
                   </div>
                 </button>

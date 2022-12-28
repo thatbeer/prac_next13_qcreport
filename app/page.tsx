@@ -41,12 +41,12 @@ function HomePage() {
         <div className='fixed  top-0 z-40 w-full'>
           <GlobalHeader/>
         </div>
-        <div className='pt-[64px]'>
+        <div className='pt-[64px] '>
           {/* <Authen /> */}
           {/* <Mainpage/> */}
           {/* <Secondpage/> */}
           {/* <Adminspage /> */}
-          {/* <DetailPage /> */}
+          <DetailPage />
           {/* <div className='mx-auto px-2 my-4 flex flex-col w-full md:w-2/3'>
             <div className='
              border border-gray-700  '>

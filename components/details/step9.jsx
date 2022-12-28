@@ -6,7 +6,7 @@ import { CheckIcon } from '@heroicons/react/24/outline'
 const Step9 = () => {
   return (
     <>
-        <div className='flex flex-col'>
+        <div className='flex-col'>
             <h1 className='text-3xl font-bold'>9. ทดสอบคอนกรีต</h1>
 
 
@@ -14,31 +14,31 @@ const Step9 = () => {
 
             <div className='mx-auto w-full relative my-2'>
             <div className=' block '>
-            <div className='py-2 border border-gray-600 rounded-t  flex items-center
-            justify-center font-bold text-xl bg-blue-200'>
-                <h1>ข้อมูลทดสอบคอนกรีต</h1>
+            <div className='py-1 border border-gray-600 rounded-t  items-center
+            justify-start bg-blue-200'>
+                <h1 className='text-start mx-2 font-bold'>ข้อมูลทดสอบคอนกรีต</h1>
             </div>
             <table className='w-full'>
                 <tbody className=' '>
-                <tr className=' flex border border-x border-gray-600 items-center text-start justify-between '>
-                    <th className='p-2 w-1/3 border-r bg-green-200 border-gray-600'>ยี่ห้อคอนกรีต	</th>
-                    <td className='p-2 w-2/3 text-start '></td>
+                <tr className=' border border-x border-gray-600 items-center text-start justify-between '>
+                    <th className='py-1 px-2 w-1/2 lg:w-1/3 border-r text-start text-sm bg-green-200 border-gray-600'>ยี่ห้อคอนกรีต	</th>
+                    <td className='py-1 px-2 w-1/2 lg:w-2/3 text-start '></td>
                 </tr>
-                <tr className=' flex border border-x border-gray-600 items-center text-start justify-between '>
-                    <th className='p-2 w-1/3 border-r bg-green-200 border-gray-600'>Strength	</th>
-                    <td className='p-2 w-2/3 text-start '>	26 ธ.ค. 2565 (14:02)</td>
+                <tr className=' border border-x border-gray-600 items-center text-start justify-between '>
+                    <th className='py-1 px-2 w-1/2 lg:w-1/3 border-r text-start text-sm bg-green-200 border-gray-600'>Strength	</th>
+                    <td className='py-1 px-2 w-1/2 lg:w-2/3 text-start '>	26 ธ.ค. 2565 (14:02)</td>
                 </tr>
-                <tr className=' flex border border-x border-gray-600 items-center text-start justify-between '>
-                    <th className='p-2 w-1/3 border-r bg-green-200 border-gray-600'>MIX No.	</th>
-                    <td className='p-2 w-2/3 text-start '>	26 ธ.ค. 2565 (14:29)</td>
+                <tr className=' border border-x border-gray-600 items-center text-start justify-between '>
+                    <th className='py-1 px-2 w-1/2 lg:w-1/3 border-r text-start text-sm bg-green-200 border-gray-600'>MIX No.	</th>
+                    <td className='py-1 px-2 w-1/2 lg:w-2/3 text-start '>	26 ธ.ค. 2565 (14:29)</td>
                 </tr>
-                <tr className=' flex border border-x border-gray-600 items-center text-start justify-between '>
-                    <th className='p-2 w-1/3 border-r bg-green-200 border-gray-600'>ค่า Slump (ซม.)</th>
-                    <td className='p-2 w-2/3 text-start '>CR-20</td>
+                <tr className=' border border-x border-gray-600 items-center text-start justify-between '>
+                    <th className='py-1 px-2 w-1/2 lg:w-1/3 border-r text-start text-sm bg-green-200 border-gray-600'>ค่า Slump (ซม.)</th>
+                    <td className='py-1 px-2 w-1/2 lg:w-2/3 text-start '>CR-20</td>
                 </tr>
-                <tr className=' flex border border-x border-gray-600 items-center text-start justify-between '>
-                    <th className='p-2 w-1/3 border-r bg-green-200 border-gray-600'>ปริมาณคอนกรีตสะสม (ม3)</th>
-                    <td className='p-2 w-2/3 text-start '>	โบ-พงษ์เทพ คิดดีจริง</td>
+                <tr className=' border border-x border-gray-600 items-center text-start justify-between '>
+                    <th className='py-1 px-2 w-1/2 lg:w-1/3 border-r text-start text-sm bg-green-200 border-gray-600'>ปริมาณคอนกรีตสะสม (ม3)</th>
+                    <td className='py-1 px-2 w-1/2 lg:w-2/3 text-start '>	โบ-พงษ์เทพ คิดดีจริง</td>
                 </tr>
                
                 </tbody>
