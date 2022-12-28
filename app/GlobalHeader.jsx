@@ -144,10 +144,10 @@ const GlobalHeader = () =>  {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href="/auth"
                             className={classNames(active ? 'bg-blue-100 shadow-md' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
-                            Sign out
+                            Log in(Log out)
                           </a>
                         )}
                       </Menu.Item>
