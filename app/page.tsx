@@ -4,7 +4,6 @@ import React  from 'react'
 import Authen from './Authen';
 import GlobalHeader from './GlobalHeader';
 import Mainpage from './Mainpage';
-import Skemaincard from '../components/ske-maincard'
 import Secondpage from './Secondpage'
 import Adminspage from './Adminspage';
 import DetailPage from './DetailPage';
