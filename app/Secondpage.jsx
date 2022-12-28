@@ -2,10 +2,8 @@ import Stickytitle from '../components/stickytitle';
 import Progressbar from '../components/progressbar'
 import TableContent from "../components/tablecotent";
 import Filtergroup from '../components/filtergroup';
-import { StepBarTitle , StepBarUse} from '../components/StepBar';
-import Statcard from '../components/Statcard'
 import FiltergroupMB from '../components/filtergroup(mb)'
-import Listbox from '../components/Listbox';
+
 
 
 

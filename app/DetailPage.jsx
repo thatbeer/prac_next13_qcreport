@@ -14,10 +14,7 @@ import Step11 from '../components/details/step11'
 
 import Subnavbar from '../components/Subnavbar';
 import Statcard from '../components/Statcard';
-import HeadedTable from '../components/details/headedtable'
-import HeadlessTable from '../components/details/headlesstable'
-import TestTable from '../components/utils/reacttable'
-import NotExistTab from '../components/details/204tab'
+
 const header = [
     {
         Header: "No."
