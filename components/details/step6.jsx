@@ -6,7 +6,7 @@ const Step6 = () => {
   return (
     <>
         <div className='flex flex-col'>
-            <h1 className='text-3xl font-bold'>6. เก็บตะกอน</h1>
+            {/* <h1 className='text-3xl font-bold'>6. เก็บตะกอน</h1> */}
 
           
 

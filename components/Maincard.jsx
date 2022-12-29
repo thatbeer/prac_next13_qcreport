@@ -3,7 +3,7 @@ import Dropdownlist from './Dropdownlist';
 const Maincard = (props) => {
     return (
         <>
-            <div className="block px-4 py-1 my-1 border  rounded-lg w-[660px] mx-auto  h-[160px] md:h-auto
+            <div className="block px-4 py-1 my-1 border  rounded-lg w-[630px] mx-auto  h-[160px] lg:h-auto
                             shadow-none hover:shadow-sm bg-zinc-100 hover:bg-gray-200">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-800 dark:text-whte truncate ">
                     Lorem ipsum
@@ -13,7 +13,7 @@ const Maincard = (props) => {
 
                     </p>
                     
-                    <div className="flex flex-inline items-center justify-between md:my-2 mt-8 mx-auto">
+                    <div className="flex flex-inline items-center justify-between lg:my-2 mt-8 mx-auto">
                         <div className="flex flex-row-2 gap-6 mr-auto items-center">
                             <p className='flex flex-inline mx-2 '>1 {"  "}
                                 <svg class="animate-wiggle w-6 h-6 text-red-500 mx-2 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>

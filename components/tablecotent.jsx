@@ -20,8 +20,8 @@ function TableContent(products) {
             <table class="table-auto w-full divide-y divide-gray-700 min-h-[240px]">
                 <thead>
                     <tr className='grid-inline grid-cols-13 items-center justify-center my-2'>
-                        <th>PileId</th>
-                        <th className='overflow-x-auto flex items-center justify-center'>
+                        <th colSpan={1}>PileId</th>
+                        <th colSpan={11} className='overflow-x-auto flex items-center justify-center'>
                             <ul className='flex flex-row mx-3'>
                                 <li className='mx-2.5'>Step1</li>
                                 <li className='mx-2.5'>Step2</li>
@@ -36,7 +36,7 @@ function TableContent(products) {
                                 <li className='mx-2.5'>Step11</li>
                             </ul>
                         </th>
-                        <th>Updated</th>
+                        <th colSpan={1}>Updated</th>
                     </tr>
                 </thead>
                 <tbody className='divide-y divide-gray-700'>

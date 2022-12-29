@@ -8,7 +8,7 @@ const Step11 = () => {
   return (
     <>
         <div className='flex flex-col'>
-            <h1 className='text-3xl font-bold'>11. ถอนเคสซิ่ง</h1>
+            {/* <h1 className='text-3xl font-bold'>11. ถอนเคสซิ่ง</h1> */}
 
 
             <div className='mx-auto w-full relative my-2'>

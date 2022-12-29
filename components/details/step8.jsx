@@ -7,7 +7,7 @@ const Step8 = () => {
   return (
     <>
         <div className='flex flex-col'>
-            <h1 className='text-3xl font-bold'>8. ลงท่อเทรมี่ / เม็ดโฟม</h1>
+            {/* <h1 className='text-3xl font-bold'>8. ลงท่อเทรมี่ / เม็ดโฟม</h1> */}
 
             <div className='mx-auto w-full relative my-2'>
             <div className=' block '>

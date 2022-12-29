@@ -6,7 +6,7 @@ const Step3 = () => {
   return (
     <>
         <div className='flex flex-col'>
-            <h1 className='text-3xl font-bold'>3. วัดตำแหน่งก่อนเจาะ</h1>
+            {/* <h1 className='text-3xl font-bold'>3. วัดตำแหน่งก่อนเจาะ</h1> */}
 
             {/* Borede pile */}
             <div className='mx-auto w-full relative my-2'>

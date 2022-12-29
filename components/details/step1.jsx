@@ -60,7 +60,7 @@ const Step1 = () => {
            
            
         
-            <h1 className='text-3xl font-bold'>1. เตรียมโครงเหล็ก</h1>
+            {/* <h1 className='text-3xl font-bold'>1. เตรียมโครงเหล็ก</h1> */}
             
        
             
