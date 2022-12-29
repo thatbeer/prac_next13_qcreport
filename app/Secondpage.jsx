@@ -64,23 +64,23 @@ const Secondpage = () => {
                     </div>
                 </div> */}
 
-                <div className='fixed top-12 w-screen items-center mx-auto h-[50px] z-30 '>
-                    <div className='flex flex-col lg:flex-row mx-auto items-center bg-blue-200'>
+                <div className='fixed top-[55px] w-full items-center mx-auto bg-green-200 h-[50px] z-30 '>
+                    <div className='flex flex-col lg:flex-row mx-auto items-center py-1 bg-red-200'>
                         {/* <div className='justify-start flex lg:hidden '>
                             <button className='mx-auto btn btn-warning'>filter1</button>
                           
                         </div> */}
-                        <div className=' w-1/3 justify-center hidden lg:flex mx-auto py-1 '>
-                            <button className='mx-10 bg-gray-200 border border-gray-400 py-3 px-6 rounded-lg'>filter1</button>
-                            <button className='mx-10 bg-gray-200 border border-gray-400 py-3 px-6 rounded-lg'>filter2</button>
-                            <button className='mx-10 bg-gray-200 border border-gray-400 py-3 px-6 rounded-lg'>filter3</button>
-                            <button className='mx-10 bg-gray-200 border border-gray-400 py-3 px-6 rounded-lg'>filter4</button>
+                        <div className=' w-1/3 justify-center hidden lg:flex mx-auto '>
+                            <button className='mx-10 bg-gray-200 border border-gray-400 py-4 px-6 rounded-lg'>filter1</button>
+                            <button className='mx-10 bg-gray-200 border border-gray-400 py-4 px-6 rounded-lg'>filter2</button>
+                            <button className='mx-10 bg-gray-200 border border-gray-400 py-4 px-6 rounded-lg'>filter3</button>
+                            <button className='mx-10 bg-gray-200 border border-gray-400 py-4 px-6 rounded-lg'>filter4</button>
 
                         </div>
                         {/* search bar section */}
-                        <div className='relative flex  text-gray-700 mx-auto lg:mx-2 py-1'>
+                        <div className='relative flex  text-gray-700 mx-auto lg:mx-2'>
                             <input type={'search'} name="search" placeholder='search'
-                                className='border-2 lg:w-screen  border-gray-300 bg-white h-8  px-1 rounded-lg text-sm focus:outline-none'/>
+                                className='border-2 lg:w-full  border-gray-300 bg-white h-8  px-1 rounded-lg text-sm focus:outline-none'/>
                             <button type='submit' className='relative '>
                                 <MagnifyingGlassCircleIcon onClick={() => console.log('click search')} className='w-8 h-8 ml-1 hover:text-white' />
                             </button>
@@ -102,7 +102,7 @@ const Secondpage = () => {
                 </div> */}
 
 
-                <div className='flex flex-1 mx-auto'>
+                <div className='flex flex-1 mx-auto mt-4 lg:mt-0'>
                     <main role="main" className="lg:w-full w-screen h-full flex-grow px-2 ">
                         <div className='flex flex-col lg:flex-row justify-between pt-[64px] mx-auto'>
                             
